@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { FloatingActions } from "@/components/layout/floating-actions";
 import { LocalBusinessJsonLd, FaqJsonLd } from "@/components/json-ld";
 import { site } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -115,6 +116,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingActions />
+        <Analytics />
       </body>
     </html>
   );

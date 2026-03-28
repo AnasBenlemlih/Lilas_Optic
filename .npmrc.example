@@ -1,0 +1,5 @@
+# Si `npm run build` échoue sur lightningcss sous Windows, copiez ce fichier :
+#   copy .npmrc.example .npmrc   (PowerShell / cmd)
+# Ne commitez pas .npmrc (déjà dans .gitignore) — Vercel utilise Linux sans ce fichier.
+
+os=win32
