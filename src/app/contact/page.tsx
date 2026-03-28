@@ -45,7 +45,7 @@ export default function ContactPage() {
         <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <div className="space-y-6">
-              <div className="rounded-2xl border border-border-subtle bg-night-blue/40 p-6 backdrop-blur-sm">
+              <div className="rounded-2xl border border-border-subtle bg-laurel/22 p-6 backdrop-blur-sm">
                 <div className="flex gap-4">
                   <Phone className="h-5 w-5 shrink-0 text-gold" />
                   <div>
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-border-subtle bg-night-blue/40 p-6 backdrop-blur-sm">
+              <div className="rounded-2xl border border-border-subtle bg-laurel/22 p-6 backdrop-blur-sm">
                 <div className="flex gap-4">
                   <MessageCircle className="h-5 w-5 shrink-0 text-gold" />
                   <div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-border-subtle bg-night-blue/40 p-6 backdrop-blur-sm">
+              <div className="rounded-2xl border border-border-subtle bg-laurel/22 p-6 backdrop-blur-sm">
                 <div className="flex gap-4">
                   <MapPin className="h-5 w-5 shrink-0 text-gold" />
                   <div>

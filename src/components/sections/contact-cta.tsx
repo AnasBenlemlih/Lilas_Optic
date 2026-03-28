@@ -8,9 +8,9 @@ export function ContactCta() {
     <section className="border-t border-border-subtle py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] border border-border-subtle bg-gradient-to-br from-night-blue via-bg-elevated to-night-blue-soft px-8 py-14 text-center shadow-2xl shadow-black/40 sm:px-14">
-            <div className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-gold/10 blur-3xl" />
-            <div className="pointer-events-none absolute -right-16 bottom-0 h-48 w-48 rounded-full bg-night-blue-soft blur-3xl" />
+          <div className="relative overflow-hidden rounded-[2rem] border border-border-subtle bg-gradient-to-br from-laurel/25 via-bg-elevated to-amulet/20 px-8 py-14 text-center shadow-2xl shadow-black/35 sm:px-14">
+            <div className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-gold/15 blur-3xl" />
+            <div className="pointer-events-none absolute -right-16 bottom-0 h-48 w-48 rounded-full bg-amulet/30 blur-3xl" />
             <p className="relative text-xs font-semibold uppercase tracking-[0.25em] text-gold">
               Rendez-vous &amp; conseil
             </p>

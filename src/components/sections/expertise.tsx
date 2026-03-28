@@ -5,7 +5,7 @@ export function Expertise() {
   return (
     <section
       id="expertise"
-      className="scroll-mt-28 border-t border-border-subtle py-24 sm:py-32"
+      className="scroll-mt-28 border-t border-border-subtle bg-amulet/10 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
@@ -29,7 +29,7 @@ export function Expertise() {
           </Reveal>
 
           <Reveal delay={0.08} className="lg:col-span-7">
-            <div className="space-y-6 rounded-3xl border border-border-subtle bg-night-blue/40 p-8 backdrop-blur-sm">
+            <div className="space-y-6 rounded-3xl border border-border-subtle bg-laurel/22 p-8 backdrop-blur-sm">
               <div>
                 <h3 className="font-serif text-xl text-gold">
                   Centre optique Aïn Sebaa &amp; conseil d&apos;opticien

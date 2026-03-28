@@ -8,7 +8,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="scroll-mt-28 border-t border-border-subtle bg-night-blue/30 py-24 sm:py-32"
+      className="scroll-mt-28 border-t border-border-subtle bg-amulet/14 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
@@ -35,9 +35,9 @@ export function Services() {
               <motion.article
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border-subtle bg-bg-elevated/80 p-6 shadow-lg shadow-black/20 backdrop-blur-md transition-colors hover:border-gold/25"
+                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border-subtle bg-laurel/18 p-6 shadow-lg shadow-black/20 backdrop-blur-md transition-colors hover:border-gold/35 hover:bg-laurel/28"
               >
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-gold/20 bg-night-blue-soft text-gold transition-colors group-hover:border-gold/40 group-hover:bg-night-blue">
+                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-gold/25 bg-bg-deep/60 text-gold transition-colors group-hover:border-gold/45 group-hover:bg-bg-deep/85">
                   <item.icon className="h-5 w-5" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-xl text-cream">{item.title}</h3>

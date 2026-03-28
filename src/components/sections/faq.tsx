@@ -34,7 +34,7 @@ export function Faq() {
   return (
     <section
       id="faq"
-      className="scroll-mt-28 border-t border-border-subtle bg-night-blue/20 py-24 sm:py-32"
+      className="scroll-mt-28 border-t border-border-subtle bg-amulet/10 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center">
@@ -59,11 +59,11 @@ export function Faq() {
             const isOpen = open === i;
             return (
               <Reveal key={item.q} delay={i * 0.05}>
-                <div className="overflow-hidden rounded-2xl border border-border-subtle bg-bg-elevated/90 backdrop-blur-md">
+                <div className="overflow-hidden rounded-2xl border border-border-subtle bg-bg-deep/55 backdrop-blur-md">
                   <button
                     type="button"
                     onClick={() => setOpen(isOpen ? null : i)}
-                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-cream transition-colors hover:bg-night-blue/40"
+                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-cream transition-colors hover:bg-laurel/25"
                     aria-expanded={isOpen}
                   >
                     <span className="font-medium">{item.q}</span>

@@ -4,7 +4,7 @@ import { site, navLinks } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border-subtle bg-night-blue/40">
+    <footer className="border-t border-border-subtle bg-amulet/18">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>

@@ -67,7 +67,7 @@ export function About() {
           </Reveal>
 
           <Reveal delay={0.12}>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border-subtle bg-night-blue-soft shadow-2xl shadow-black/40">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border-subtle bg-laurel/35 shadow-2xl shadow-black/40">
               <Image
                 src={aboutImage}
                 alt="Lunettes de soleil et style optique — boutique Lila's Optic Casablanca"

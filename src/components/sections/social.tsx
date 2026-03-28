@@ -38,7 +38,7 @@ export function Social() {
   return (
     <section
       id="inspiration"
-      className="scroll-mt-28 border-t border-border-subtle bg-night-blue/25 py-24 sm:py-32"
+      className="scroll-mt-28 border-t border-border-subtle bg-laurel/12 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Reveal className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
@@ -83,7 +83,7 @@ export function Social() {
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.35 }}
-                className="group relative aspect-square overflow-hidden rounded-2xl border border-border-subtle bg-night-blue-soft"
+                className="group relative aspect-square overflow-hidden rounded-2xl border border-border-subtle bg-amulet/20"
               >
                 <Image
                   src={tile.src}

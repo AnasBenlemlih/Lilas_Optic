@@ -18,7 +18,7 @@ export function FloatingActions() {
         animate={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
-        className="flex h-14 w-14 items-center justify-center rounded-full border border-border-subtle bg-night-blue/90 text-gold shadow-xl shadow-black/30 backdrop-blur-md transition-colors hover:border-gold/40 hover:bg-night-blue"
+        className="flex h-14 w-14 items-center justify-center rounded-full border border-gold/35 bg-laurel/50 text-gold shadow-xl shadow-black/35 backdrop-blur-md transition-colors hover:border-gold/55 hover:bg-laurel/70 hover:text-cream"
       >
         <Phone className="h-5 w-5" strokeWidth={1.75} />
       </motion.a>
@@ -32,7 +32,7 @@ export function FloatingActions() {
         transition={{ delay: 0.08 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-black/30 transition-colors hover:bg-[#20bd5a]"
+        className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-amulet text-white shadow-xl shadow-black/35 transition-colors hover:bg-laurel hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
       >
         <MessageCircle className="h-6 w-6" strokeWidth={1.75} />
       </motion.a>

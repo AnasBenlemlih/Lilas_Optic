@@ -29,7 +29,7 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-border-subtle bg-bg-deep/80 py-3 shadow-lg shadow-black/20 backdrop-blur-xl"
+          ? "border-b border-border-subtle bg-bg-deep/85 py-3 shadow-lg shadow-black/25 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent py-5"
       }`}
     >
@@ -81,7 +81,7 @@ export function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="rounded-lg px-3 py-3 text-cream transition-colors hover:bg-night-blue-soft hover:text-gold"
+                  className="rounded-lg px-3 py-3 text-cream transition-colors hover:bg-laurel/30 hover:text-gold"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

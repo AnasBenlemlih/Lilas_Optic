@@ -26,7 +26,7 @@ export function Location() {
               <strong className="text-cream/95">suivi lentilles</strong> sans
               contrainte.
             </p>
-            <div className="mt-8 flex gap-3 rounded-2xl border border-border-subtle bg-night-blue/40 p-5 backdrop-blur-sm">
+            <div className="mt-8 flex gap-3 rounded-2xl border border-border-subtle bg-amulet/16 p-5 backdrop-blur-sm">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
               <div>
                 <p className="font-medium text-cream">Adresse</p>
@@ -48,7 +48,7 @@ export function Location() {
               href={site.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-medium text-bg-deep shadow-lg shadow-gold/20 transition-colors hover:bg-gold-hover"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-medium text-bg-deep shadow-lg shadow-black/20 ring-1 ring-gold/40 transition-colors hover:bg-gold-hover hover:ring-bg-deep/20"
             >
               <Navigation className="h-4 w-4" />
               Ouvrir dans Google Maps
@@ -67,7 +67,7 @@ export function Location() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="overflow-hidden rounded-3xl border border-border-subtle bg-night-blue-soft shadow-2xl shadow-black/40">
+            <div className="overflow-hidden rounded-3xl border border-border-subtle bg-laurel/25 shadow-2xl shadow-black/40">
               <div className="aspect-[4/3] w-full lg:aspect-square">
                 <iframe
                   title="Carte — Lila's Optic, Casablanca"
