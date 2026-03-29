@@ -2,8 +2,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/reveal";
 import { site } from "@/lib/site";
 
-const aboutImage =
-  "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=1200&q=85";
+const aboutImage = "/images/about-lilas-optic.jpeg";
 
 export function About() {
   return (
