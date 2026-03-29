@@ -107,13 +107,14 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${cormorant.variable} ${outfit.variable} h-full scroll-smooth antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="relative min-h-full flex flex-col font-sans">
         <LocalBusinessJsonLd />
         <FaqJsonLd />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="relative flex-1">{children}</main>
         <Footer />
         <FloatingActions />
         <Analytics />

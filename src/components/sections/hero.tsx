@@ -22,10 +22,13 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-[100svh] overflow-hidden pt-28"
+      className="relative isolate min-h-[100svh] overflow-hidden pt-28"
     >
       <div className="absolute inset-0 bg-gradient-mesh" />
-      <motion.div style={{ y }} className="absolute inset-0">
+      <motion.div
+        style={{ y }}
+        className="absolute inset-0 will-change-transform"
+      >
         <Image
           src={heroImage}
           alt="Monture optique élégante — lunettes premium et conseil opticien à Casablanca"
