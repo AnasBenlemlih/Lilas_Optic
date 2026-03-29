@@ -5,8 +5,17 @@ import { motion } from "framer-motion";
 import { Reveal } from "@/components/motion/reveal";
 import { services } from "@/lib/services-data";
 
-/** 6 cartes = grille 2×3 comme la maquette ; le reste en grille identique en dessous */
+/** 6 cartes = grille 2×3 ; le reste en grille identique en dessous */
 const FEATURED_COUNT = 6;
+
+const objectFocus: Record<
+  NonNullable<(typeof services)[number]["imageFocus"]>,
+  string
+> = {
+  center: "object-center",
+  top: "object-top",
+  bottom: "object-bottom",
+};
 
 function ServiceImageCard({
   item,
@@ -17,37 +26,41 @@ function ServiceImageCard({
   index: number;
   priority: boolean;
 }) {
+  const focus = item.imageFocus ?? "center";
+  const objectPos = objectFocus[focus];
+
   return (
     <Reveal delay={Math.min(index * 0.04, 0.35)}>
       <motion.article
         whileHover={{ y: -4 }}
         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="group relative aspect-square overflow-hidden rounded-3xl border border-gold/25 shadow-lg shadow-black/35"
+        className="group relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-gold/25 shadow-lg shadow-black/35"
       >
         <Image
           src={item.image}
           alt={item.title}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+          quality={88}
+          className={`object-cover ${objectPos} transition-transform duration-700 ease-out group-hover:scale-[1.03]`}
           priority={priority}
         />
-        {/* Dégradé bas : Elephant semi-transparent → transparent (photo visible en haut) */}
+
+        {/* Bandeau bas ~30–36 % : le reste de la carte reste sans voile vert */}
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#154D4B] from-25% via-[#154D4B]/45 via-55% to-transparent"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] min-h-[7rem] max-h-[10.5rem] bg-gradient-to-t from-[#154D4B] from-0% via-[#154D4B]/82 via-[45%] to-transparent sm:max-h-[11.5rem]"
           aria-hidden
         />
 
-        {/* Bloc texte : bas GAUCHE — titre → trait doré → description (comme la maquette) */}
-        <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 pb-7 pt-20 text-left sm:p-7 sm:pb-8">
-          <h3 className="max-w-[95%] font-serif text-lg font-medium leading-snug tracking-tight text-gold sm:text-xl md:text-2xl">
+        <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-start px-4 pb-4 pt-6 text-left sm:px-5 sm:pb-5">
+          <h3 className="max-w-[98%] font-serif text-base font-medium leading-tight tracking-tight text-gold sm:text-lg md:text-xl">
             {item.title}
           </h3>
           <div
-            className="mt-3 h-px w-11 shrink-0 bg-gold/85 sm:w-12"
+            className="mt-2 h-px w-10 shrink-0 bg-gold/90 sm:w-11"
             aria-hidden
           />
-          <p className="mt-3 max-w-[95%] text-xs leading-relaxed text-white/95 sm:text-sm">
+          <p className="mt-2 line-clamp-3 max-w-[98%] text-[11px] leading-snug text-white/95 sm:text-xs sm:leading-relaxed">
             {item.description}
           </p>
         </div>
