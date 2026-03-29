@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,13 +35,19 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex flex-col">
-          <span className="font-serif text-xl tracking-tight text-cream transition-colors group-hover:text-gold sm:text-2xl">
-            {site.name}
-          </span>
-          <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-cream-muted">
-            Casablanca · Aïn Sebaâ
-          </span>
+        <Link
+          href="/"
+          className="relative shrink-0 outline-offset-4 transition-opacity hover:opacity-90 focus-visible:opacity-90"
+        >
+          <Image
+            src="/images/LOGOpng.png"
+            alt={`${site.name} — Casablanca, Aïn Sebaâ`}
+            width={500}
+            height={100}
+            priority
+            sizes="(max-width: 640px) min(200px, 52vw), (max-width: 1024px) 240px, 280px"
+            className="h-8 w-auto max-w-[min(200px,52vw)] object-contain object-left sm:h-10 sm:max-w-[240px] md:h-11 lg:h-12 lg:max-w-[280px]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
