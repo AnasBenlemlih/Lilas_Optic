@@ -49,6 +49,8 @@
 }
 
 html {
+  /* useScroll (Framer Motion) : scrollingElement ne doit pas être position: static */
+  position: relative;
   scroll-behavior: smooth;
 }
 
