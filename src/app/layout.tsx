@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Great_Vibes,
+  Jost,
+  Outfit,
+} from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -19,6 +24,21 @@ const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
+});
+
+const signature = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-signature",
+  display: "swap",
+});
+
+/** Titres « carte marque » : capitales, style premium (proche Lens & Style) */
+const displaySans = Jost({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const keywords = [
@@ -108,7 +128,7 @@ export default function RootLayout({
     <html
       lang="fr"
       data-scroll-behavior="smooth"
-      className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${outfit.variable} ${signature.variable} ${displaySans.variable} h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col font-sans">
         <LocalBusinessJsonLd />

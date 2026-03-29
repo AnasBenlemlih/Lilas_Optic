@@ -118,10 +118,10 @@ export function Services() {
                 Au-delà de l&apos;essentiel
               </p>
               <h3 className="mt-2 font-serif text-2xl text-cream sm:text-3xl">
-                Sur-mesure, offres, enfants &amp; expertises
+                Offres, enfants &amp; expertises
               </h3>
             </Reveal>
-            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
               {more.map((item, i) => (
                 <ServiceImageCard
                   key={item.title}

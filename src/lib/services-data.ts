@@ -17,9 +17,7 @@ export type ServiceItem = {
   title: string;
   description: string;
   icon: LucideIcon;
-  /** Chemin public, ex. /images/1.jpeg */
   image: string;
-  /** Cadrage photo : center (défaut), top, bottom */
   imageFocus?: "center" | "top" | "bottom";
 };
 
@@ -36,6 +34,7 @@ export const services: ServiceItem[] = [
     description:
       "Protection UV, style affirmé et verres solaires de qualité pour profiter du soleil en toute sérénité.",
     icon: Sun,
+    imageFocus: "top",
     image: "/images/5.jpeg",
   },
   {
@@ -58,6 +57,7 @@ export const services: ServiceItem[] = [
     description:
       "Chaînettes, étuis premium et petits indispensables qui complètent votre tenue avec finesse.",
     icon: Package,
+    imageFocus: "top",
     image: "/images/10.jpeg",
   },
   {
@@ -66,13 +66,6 @@ export const services: ServiceItem[] = [
       "Une sélection pointue de maisons reconnues pour allier signature design et fiabilité technique.",
     icon: Gem,
     image: "/images/3.jpeg",
-  },
-  {
-    title: "Le sur-mesure",
-    description:
-      "Ajustements précis, montage sur mesure et finitions soignées pour un porté parfaitement à votre mesure.",
-    icon: Wrench,
-    image: "/images/8.jpeg",
   },
   {
     title: "Offres & services",

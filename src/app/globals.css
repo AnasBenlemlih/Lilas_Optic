@@ -38,6 +38,16 @@
   --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
 }
 
+/* Signature manuscrite (Great Vibes) — variable injectée sur <html> par next/font */
+.font-signature {
+  font-family: var(--font-signature), "Brush Script MT", cursive;
+}
+
+/* Titres type carte luxe (Jost) */
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
