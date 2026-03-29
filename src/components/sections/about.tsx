@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/reveal";
 import { site } from "@/lib/site";
 
 const aboutImage =
-  "https://images.unsplash.com/photo-1511499767150-a48a237e0082?auto=format&fit=crop&w=1200&q=85";
+  "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=1200&q=85";
 
 export function About() {
   return (

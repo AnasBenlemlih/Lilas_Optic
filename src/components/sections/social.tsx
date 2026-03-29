@@ -13,11 +13,11 @@ const tiles = [
     alt: "Lunettes tendance et monture optique — inspiration style Lila's Optic",
   },
   {
-    src: "https://images.unsplash.com/photo-1509695507492-924f7cb5c8e4?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
     alt: "Détail verres et monture — expertise opticien Casablanca",
   },
   {
-    src: "https://images.unsplash.com/photo-1591076482160-42ce6f69f306?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=800&q=80",
     alt: "Showroom optique moderne — boutique lunettes Casablanca",
   },
   {
@@ -25,7 +25,7 @@ const tiles = [
     alt: "Sélection de lunettes de vue — optique Aïn Sebaa",
   },
   {
-    src: "https://images.unsplash.com/photo-1513677784618-e35a7c90e2a7?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
     alt: "Lunettes de soleil premium — soleil et protection visuelle",
   },
   {
