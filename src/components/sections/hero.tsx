@@ -8,8 +8,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { site } from "@/lib/site";
 import { ButtonLink } from "@/components/ui/button-link";
 
-const heroImage =
-  "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=2000&q=85";
+const heroImage = "/images/LOGO.png";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -55,13 +54,12 @@ export function Hero() {
           <h1 className="font-serif text-4xl leading-[1.1] tracking-tight text-cream sm:text-5xl lg:text-6xl xl:text-[3.5rem]">
             <span className="block text-gold">{site.name}</span>
             <span className="mt-2 block text-cream">
-              Opticien à Casablanca — santé visuelle, élégance &amp; précision
+              Offrez à vos yeux l’expertise qu’ils méritent.
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-muted sm:text-xl">
-            {site.slogan} Découvrez une boutique optique où chaque détail compte
-            : lunettes de vue, lunettes de soleil et lentilles de contact, avec
-            un conseil personnalisé pour votre santé visuelle.
+          Chez Lila’s Optic, nous sélectionnons pour vous des lunettes et lentilles alliant confort, qualité et élégance.
+          Profitez d’un accompagnement personnalisé pour trouver la solution visuelle idéale, adaptée à votre style et à vos besoins.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <ButtonLink href="/contact" variant="primary" className="group">
